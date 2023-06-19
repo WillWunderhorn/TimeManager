@@ -28,6 +28,13 @@ body {
     font-size: 40px;
 }
 
+.workContent, .restContent {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+
 .go {
     height: 50px;
     width: 250px;

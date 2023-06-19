@@ -6,11 +6,13 @@ let restIntervalId = null;
 document.querySelector('.go').addEventListener('click', function () {
     let workHoursElement = document.querySelector('.p_work span:first-child');
     let workMinutesElement = document.querySelector('.p_work span:last-child');
+
     let restHoursElement = document.querySelector('.p_rest span:first-child');
     let restMinutesElement = document.querySelector('.p_rest span:last-child');
 
     let workHours = workHoursElement.innerText.replace('h', '');
     let workMinutes = workMinutesElement.innerText.replace('m', '');
+
     let restHours = restHoursElement.innerText.replace('h', '');
     let restMinutes = restMinutesElement.innerText.replace('m', '');
 

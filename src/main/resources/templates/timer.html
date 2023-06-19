@@ -10,8 +10,9 @@
 <div class="content">
     <h1 class="timer">Timer</h1>
 
+    <div class="workContent">
         <p class="p_work">
-            Work:
+            Work time:
             <span hidden th:text="${workHours} + 'h'"></span>
             <span hidden th:text="${workMinutes} + 'm'"></span>
         </p>
@@ -19,9 +20,11 @@
             <span th:if="${workHours != 0}" th:text="${workHours} + 'h'"></span>
             <span th:if="${workMinutes != 0}" th:text="${workMinutes} + 'm'"></span>
         </p>
+    </div>
 
+    <div class="restContent">
         <p class="p_rest">
-            Break:
+            Break time:
             <span hidden th:text="${restHours} + 'h'"></span>
             <span hidden th:text="${restMinutes} + 'm'"></span>
         </p>
@@ -29,8 +32,7 @@
             <span th:if="${restHours != 0}" th:text="${restHours} + 'h'"></span>
             <span  th:if="${restMinutes != 0}" th:text="${restMinutes} + 'm'"></span>
         </p>
-
-
+    </div>
 
     <button class="go">Apply</button>
     <script src="js/timerScript.js"></script>

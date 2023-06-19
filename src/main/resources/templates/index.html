@@ -27,16 +27,16 @@
     </div>
 
     <h1 class="for">Rest</h1>
-    <div class="rest">
-        <div class="time-input-rest">
-            <input type="number" class="hours-input-rest" min="0" max="23" placeholder="Hours">
-            <span>:</span>
-            <input type="number" class="minutes-input-rest" min="0" max="59" placeholder="Minutes">
+        <div class="rest">
+            <div class="time-input-rest">
+                <input type="number" class="hours-input-rest" min="0" max="23" placeholder="Hours" name="restHours">
+                <span>:</span>
+                <input type="number" class="minutes-input-rest" min="0" max="59" placeholder="Minutes" name="restMinutes">
 
-            <input type="hidden" name="restHours" value="" id="hours-input-hidden-rest">
-            <input type="hidden" name="restMinutes" value="" id="minutes-input-hidden-rest">
+                <input type="hidden" name="restHours" value="" id="hours-input-hidden-rest">
+                <input type="hidden" name="restMinutes" value="" id="minutes-input-hidden-rest">
+            </div>
         </div>
-    </div>
 
     <div class="btn">
             <button class="set-timer" type="submit">Set!</button>
