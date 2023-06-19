@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <link rel="stylesheet" href="/css/timer.css">
+
+</head>
+<body>
+<div class="content">
+    <h1 class="timer">Timer</h1>
+
+        <p class="p_work">
+            Work:
+            <span hidden th:text="${workHours} + 'h'"></span>
+            <span hidden th:text="${workMinutes} + 'm'"></span>
+        </p>
+        <p class="p_work_show">
+            <span th:if="${workHours != 0}" th:text="${workHours} + 'h'"></span>
+            <span th:if="${workMinutes != 0}" th:text="${workMinutes} + 'm'"></span>
+        </p>
+
+        <p class="p_rest">
+            Break:
+            <span hidden th:text="${restHours} + 'h'"></span>
+            <span hidden th:text="${restMinutes} + 'm'"></span>
+        </p>
+        <p class="p_rest_show">
+            <span th:if="${restHours != 0}" th:text="${restHours} + 'h'"></span>
+            <span  th:if="${restMinutes != 0}" th:text="${restMinutes} + 'm'"></span>
+        </p>
+
+
+
+    <button class="go">Apply</button>
+    <script src="js/timerScript.js"></script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    font-family: "Rubik Light";
+    padding: 20px;
+}
+.set {
+    color: cornsilk;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    padding-top: 40px;
+    letter-spacing: 3px;
+}
+
+.content {
+    color: cornsilk;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.for {
+    font-size: 40px;
+    margin: 10px;
+}
+
+.time-input-work, .time-input-rest{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    font-family: Arial, sans-serif;
+}
+
+.time-input-work input, .time-input-rest input {
+    width: 70px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.time-input-work span, .time-input-rest span {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.btn {
+    padding-top: 20px;
+}
+
+.set-timer {
+    height: 50px;
+    width: 200px;
+    background-color: #e6bea5;
+    border: 0;
+    border-radius: 5px 5px 18px 18px;
+    font-size: 20px;
+    font-weight: 700;
+}
